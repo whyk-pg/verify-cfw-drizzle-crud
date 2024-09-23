@@ -23,7 +23,7 @@ Cloudflare Workers以前では正常に反映されていたため、Cloudflare 
   - [x] POSTの動作確認
   - [x] PATCHの動作確認
   - [x] DELETEの動作確認
-- [ ] 環境変数を`.dev.vars`で管理し、Middlewareから読み出せるか確認する
+- [x] 環境変数を`.dev.vars`で管理し、Middlewareから読み出せるか確認する
 - [ ] Drizzle ORMを導入し、TiDB Serverlessに繋いで確認する
   - [ ] GETの動作確認
   - [ ] POSTの動作確認
