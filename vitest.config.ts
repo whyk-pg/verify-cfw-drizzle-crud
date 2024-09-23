@@ -9,5 +9,6 @@ export default defineWorkersConfig({
         },
       },
     },
+    exclude: ["node_modules", "**/src/**/*.newman.{js,ts}"],
   },
 });
