@@ -1,35 +1,18 @@
 import { Hono } from "hono";
+import {
+  deleteHandler,
+  getHandler,
+  patchHandler,
+  postHandler,
+} from "./handlers";
+import type { Env } from "./types";
 
-const app = new Hono();
-
-const getCommonResponse = (method: string) => {
-  return {
-    status: 200,
-    method,
-    text: "OK!",
-  };
-};
+const app = new Hono<Env>();
 
 app
-  .get("/", async (c) => {
-    return c.json({
-      ...getCommonResponse(c.req.method),
-    });
-  })
-  .post(async (c) => {
-    return c.json({
-      ...getCommonResponse(c.req.method),
-    });
-  })
-  .patch(async (c) => {
-    return c.json({
-      ...getCommonResponse(c.req.method),
-    });
-  })
-  .delete(async (c) => {
-    return c.json({
-      ...getCommonResponse(c.req.method),
-    });
-  });
+  .get("/", ...getHandler)
+  .post(...postHandler)
+  .patch(...patchHandler)
+  .delete(...deleteHandler);
 
 export default app;

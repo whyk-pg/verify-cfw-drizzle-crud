@@ -12,12 +12,13 @@
   },
   "packageManager": "pnpm@9.4.0",
   "dependencies": {
-    "hono": "^4.6.1",
-    "vitest": "^2.1.1"
+    "hono": "^4.6.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
     "@cloudflare/workers-types": "^4.20240529.0",
-    "wrangler": "^3.57.2"
+    "vitest": "^2.0.5",
+    "wrangler": "^3.78.7"
   }
 }

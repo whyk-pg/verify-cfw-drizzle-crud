@@ -35,3 +35,4 @@ Cloudflare Workers以前では正常に反映されていたため、Cloudflare 
 - [Web標準のバックエンドアプリのテスト](https://zenn.dev/yusukebe/articles/9a6335ed793c43#hono%E3%82%A2%E3%83%97%E3%83%AA%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88)
 - [How to run the Node built-in testrunner for TypeScript files inside a specific directory? · Issue #3902 · nodejs/help](https://github.com/nodejs/help/issues/3902)
 - [Factory Helper - Hono](https://hono.dev/docs/helpers/factory#createmiddleware)
+- [Vitest integration | Cloudflare Workers docs](https://developers.cloudflare.com/workers/testing/vitest-integration/)
