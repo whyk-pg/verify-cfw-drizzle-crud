@@ -1,7 +1,7 @@
 {
   "item": [
     {
-      "id": "dcef15a7-796f-453f-bc84-1d6fb8c0842a",
+      "id": "4b890ff9-edd8-46d0-bf66-7ffc3bbbe01a",
       "name": "GET",
       "request": {
         "url": {
@@ -18,23 +18,17 @@
         {
           "listen": "test",
           "script": {
-            "id": "27d74a00-02ec-462f-a26c-412f6efe7338",
+            "id": "ee286ada-9f62-451a-b9ab-1742cf92ced4",
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
-              "    const jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.status).to.eql(200);\r",
-              "    pm.expect(jsonData.method).to.eql(\"GET\");\r",
-              "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
-              "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
-              "});"
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"GET\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
             ]
           }
         }
       ]
     },
     {
-      "id": "6f0948e1-2c63-4237-af46-9fbf67fba696",
+      "id": "76679125-a64e-4b9c-8fbb-51caed183e71",
       "name": "POST",
       "request": {
         "url": {
@@ -51,23 +45,17 @@
         {
           "listen": "test",
           "script": {
-            "id": "daefa856-2e90-4126-93b3-943bdbcb59e8",
+            "id": "5741b38b-4c05-4c8c-99fb-5a6173ba4fd8",
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
-              "    const jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.status).to.eql(200);\r",
-              "    pm.expect(jsonData.method).to.eql(\"POST\");\r",
-              "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
-              "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
-              "});"
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"POST\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
             ]
           }
         }
       ]
     },
     {
-      "id": "86f7873b-bede-45c0-a54b-663d960690d9",
+      "id": "f59e6896-8ba9-4f8c-b44a-97fa5bd47a26",
       "name": "PATCH",
       "request": {
         "url": {
@@ -84,23 +72,17 @@
         {
           "listen": "test",
           "script": {
-            "id": "0d2a2d93-80fa-486e-bb77-ba575bc0281c",
+            "id": "d983a628-af8c-495b-ad46-06351de15192",
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
-              "    const jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.status).to.eql(200);\r",
-              "    pm.expect(jsonData.method).to.eql(\"PATCH\");\r",
-              "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
-              "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
-              "});"
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"PATCH\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
             ]
           }
         }
       ]
     },
     {
-      "id": "28a9a396-7282-4bf3-a16d-93b2f3dfdcd1",
+      "id": "db866306-64ed-4987-8959-b0b5b1e35381",
       "name": "DELETE",
       "request": {
         "url": {
@@ -117,16 +99,10 @@
         {
           "listen": "test",
           "script": {
-            "id": "0d7f70d0-abfa-430b-9382-7771294a40fc",
+            "id": "ae45211f-4782-4009-bf1f-6e4c876fc024",
             "type": "text/javascript",
             "exec": [
-              "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
-              "    const jsonData = pm.response.json();\r",
-              "    pm.expect(jsonData.status).to.eql(200);\r",
-              "    pm.expect(jsonData.method).to.eql(\"DELETE\");\r",
-              "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
-              "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
-              "});"
+              "pm.test(\"\\u30EC\\u30B9\\u30DD\\u30F3\\u30B9\\u30DC\\u30C7\\u30A3\\u306EJSON\\u304C\\u60F3\\u5B9A\\u901A\\u308A\\u304B\",()=>{const jsonData=pm.response.json();pm.expect(jsonData.status).to.eql(200);pm.expect(jsonData.method).to.eql(\"DELETE\");pm.expect(jsonData.text).to.eql(\"OK!\");pm.expect(jsonData.apiKey).to.eql(\"Example_0000\")})"
             ]
           }
         }
@@ -136,7 +112,7 @@
   "event": [],
   "variable": [],
   "info": {
-    "_postman_id": "eb4c7377-ebfb-4ef1-82a7-81af732ffd67",
+    "_postman_id": "9a5c017f-55ca-42a2-8e30-c1d3616b0945",
     "name": "verify-cfw-drizzle-crud",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   }
