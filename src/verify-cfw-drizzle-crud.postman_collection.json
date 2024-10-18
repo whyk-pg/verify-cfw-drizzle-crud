@@ -1,17 +1,25 @@
 {
-  "info": {
-    "_postman_id": "7e2a7dbb-8093-4fb9-b808-3cfcb0402670",
-    "name": "verify-cfw-drizzle-crud",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "11022225"
-  },
   "item": [
     {
+      "id": "dcef15a7-796f-453f-bc84-1d6fb8c0842a",
       "name": "GET",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "GET"
+      },
+      "response": [],
       "event": [
         {
           "listen": "test",
           "script": {
+            "id": "27d74a00-02ec-462f-a26c-412f6efe7338",
+            "type": "text/javascript",
             "exec": [
               "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
               "    const jsonData = pm.response.json();\r",
@@ -20,30 +28,31 @@
               "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
               "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
               "});"
-            ],
-            "type": "text/javascript",
-            "packages": {}
+            ]
           }
         }
-      ],
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8787",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "8787"
-        }
-      },
-      "response": []
+      ]
     },
     {
+      "id": "6f0948e1-2c63-4237-af46-9fbf67fba696",
       "name": "POST",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "POST"
+      },
+      "response": [],
       "event": [
         {
           "listen": "test",
           "script": {
+            "id": "daefa856-2e90-4126-93b3-943bdbcb59e8",
+            "type": "text/javascript",
             "exec": [
               "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
               "    const jsonData = pm.response.json();\r",
@@ -52,30 +61,31 @@
               "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
               "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
               "});"
-            ],
-            "type": "text/javascript",
-            "packages": {}
+            ]
           }
         }
-      ],
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8787",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "8787"
-        }
-      },
-      "response": []
+      ]
     },
     {
+      "id": "86f7873b-bede-45c0-a54b-663d960690d9",
       "name": "PATCH",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "PATCH"
+      },
+      "response": [],
       "event": [
         {
           "listen": "test",
           "script": {
+            "id": "0d2a2d93-80fa-486e-bb77-ba575bc0281c",
+            "type": "text/javascript",
             "exec": [
               "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
               "    const jsonData = pm.response.json();\r",
@@ -84,30 +94,31 @@
               "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
               "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
               "});"
-            ],
-            "type": "text/javascript",
-            "packages": {}
+            ]
           }
         }
-      ],
-      "request": {
-        "method": "PATCH",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8787",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "8787"
-        }
-      },
-      "response": []
+      ]
     },
     {
+      "id": "28a9a396-7282-4bf3-a16d-93b2f3dfdcd1",
       "name": "DELETE",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8787",
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "method": "DELETE"
+      },
+      "response": [],
       "event": [
         {
           "listen": "test",
           "script": {
+            "id": "0d7f70d0-abfa-430b-9382-7771294a40fc",
+            "type": "text/javascript",
             "exec": [
               "pm.test(\"レスポンスボディのJSONが想定通りか\", () => {\r",
               "    const jsonData = pm.response.json();\r",
@@ -116,23 +127,17 @@
               "    pm.expect(jsonData.text).to.eql(\"OK!\");\r",
               "    pm.expect(jsonData.apiKey).to.eql(\"Example_0000\");\r",
               "});"
-            ],
-            "type": "text/javascript",
-            "packages": {}
+            ]
           }
         }
-      ],
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8787",
-          "protocol": "http",
-          "host": ["localhost"],
-          "port": "8787"
-        }
-      },
-      "response": []
+      ]
     }
-  ]
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "eb4c7377-ebfb-4ef1-82a7-81af732ffd67",
+    "name": "verify-cfw-drizzle-crud",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
 }

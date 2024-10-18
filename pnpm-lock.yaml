@@ -24,9 +24,15 @@ importers:
       '@types/newman':
         specifier: ^5.3.6
         version: 5.3.6
+      '@types/postman-collection':
+        specifier: ^3.5.10
+        version: 3.5.10
       newman:
         specifier: ^6.2.1
         version: 6.2.1
+      postman-collection:
+        specifier: ^4.5.0
+        version: 4.5.0
       tsx:
         specifier: ^4.19.1
         version: 4.19.1
@@ -1294,6 +1300,10 @@ packages:
 
   postman-collection@4.4.0:
     resolution: {integrity: sha512-2BGDFcUwlK08CqZFUlIC8kwRJueVzPjZnnokWPtJCd9f2J06HBQpGL7t2P1Ud1NEsK9NHq9wdipUhWLOPj5s/Q==}
+    engines: {node: '>=10'}
+
+  postman-collection@4.5.0:
+    resolution: {integrity: sha512-152JSW9pdbaoJihwjc7Q8lc3nPg/PC9lPTHdMk7SHnHhu/GBJB7b2yb9zG7Qua578+3PxkQ/HYBuXpDSvsf7GQ==}
     engines: {node: '>=10'}
 
   postman-request@2.88.1-postman.34:
@@ -2739,6 +2749,20 @@ snapshots:
       mime-types: 2.1.35
       postman-url-encoder: 3.0.5
       semver: 7.5.4
+      uuid: 8.3.2
+
+  postman-collection@4.5.0:
+    dependencies:
+      '@faker-js/faker': 5.5.3
+      file-type: 3.9.0
+      http-reasons: 0.1.0
+      iconv-lite: 0.6.3
+      liquid-json: 0.3.1
+      lodash: 4.17.21
+      mime-format: 2.0.1
+      mime-types: 2.1.35
+      postman-url-encoder: 3.0.5
+      semver: 7.6.3
       uuid: 8.3.2
 
   postman-request@2.88.1-postman.34:
